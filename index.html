@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b09">
+  <meta name="description" content="Jr.G — Reparación de electrónica y electro auto. Diagnóstico claro y trabajo bien hecho.">
+  <title>Jr.G | Electrónica y Electro Auto</title>
+  <style>
+    :root{--bg:#080b09;--panel:#101612;--line:#26352b;--green:#8cff45;--muted:#aab5ac;--white:#f4f7f3}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#080b09ed;border-bottom:1px solid #1d2920;backdrop-filter:blur(12px)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0}
+    .brand{font-size:1.65rem;font-weight:900;letter-spacing:-1.5px}.brand span{color:var(--green)}
+    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:.92rem}
+    .navlinks a:hover{color:var(--green)}
+    .hero{padding:82px 0 70px;display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center}
+    .eyebrow{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.76rem}
+    h1{font-size:clamp(2.8rem,7vw,5.4rem);line-height:.98;letter-spacing:-3px;margin:16px 0 22px}
+    h1 span{color:var(--green)} .lead{font-size:1.13rem;color:var(--muted);max-width:570px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:8px;font-weight:800;border:1px solid var(--green)}
+    .btn.primary{background:var(--green);color:#071006}.btn.secondary{color:var(--green)}
+    .hero-card{border:1px solid var(--line);background:linear-gradient(145deg,#142019,#0b100c);border-radius:18px;padding:28px;min-height:270px;display:flex;flex-direction:column;justify-content:space-between}
+    .bolt{font-size:4rem;color:var(--green);line-height:1}.hero-card strong{font-size:1.35rem}.hero-card p{color:var(--muted);margin-bottom:0}
+    section{padding:55px 0}.section-head{margin-bottom:25px}h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-1px;margin:0 0 8px}.sub{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+    h3{margin:0 0 15px;font-size:1.2rem}ul{padding-left:20px;margin:0;color:var(--muted)}li{padding:5px 0}li::marker{color:var(--green)}
+    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .work{border:1px solid var(--line);background:var(--panel);border-radius:13px;overflow:hidden}
+    .work img{width:100%;height:190px;object-fit:cover;display:block;background:#18221b}
+    .placeholder{height:190px;display:grid;place-items:center;background:linear-gradient(135deg,#17221a,#0d120e);color:#789078;font-size:.9rem;text-align:center;padding:15px}
+    .work p{padding:12px 14px;margin:0;font-weight:700}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .step{border-left:2px solid var(--green);padding:5px 15px}.step b{display:block;margin-bottom:6px}.step p{margin:0;color:var(--muted)}
+    .contact{background:linear-gradient(135deg,#142019,#0b100c);border:1px solid var(--line);border-radius:18px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .contact p{color:var(--muted);margin:5px 0 0}
+    footer{border-top:1px solid #1d2920;padding:25px 0;color:#819087;font-size:.88rem}
+    .float{position:fixed;right:18px;bottom:18px;background:var(--green);color:#071006;padding:13px 17px;border-radius:999px;font-weight:900;box-shadow:0 8px 28px #0009;z-index:20}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:58px 0 35px}.hero-card{min-height:210px}.navlinks{gap:12px;font-size:.8rem}.services{grid-template-columns:1fr}.work-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.contact{display:block}.contact .btn{margin-top:20px}}
+    @media(max-width:430px){.navlinks a:nth-child(2){display:none}.work-grid{grid-template-columns:1fr 1fr}.work img,.placeholder{height:145px}h1{letter-spacing:-2px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#">Jr<span>.</span>G<span>⚡</span></a>
+  <div class="navlinks"><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#contacto">Contacto</a></div>
+</nav></div></header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Electrónica · Electro auto</div>
+      <h1>Si no prende,<br><span>lo revisamos.</span></h1>
+      <p class="lead">Reparación de electrónica y electro auto. Diagnóstico claro y trabajo bien hecho.</p>
+      <div class="actions"><a class="btn primary wa-link" href="#">Escríbeme por WhatsApp</a><a class="btn secondary" href="#servicios">Ver servicios</a></div>
+    </div>
+    <div class="hero-card"><div class="bolt">⚡</div><div><strong>Jr.G</strong><p>Soluciones prácticas. Diagnóstico honesto. Equipos probados antes de entregar.</p></div></div>
+  </div>
+
+  <section id="servicios"><div class="wrap">
+    <div class="section-head"><h2>¿Qué reparo?</h2><p class="sub">Dos áreas de servicio, un mismo compromiso.</p></div>
+    <div class="services">
+      <article class="panel"><h3>Electrónica</h3><ul><li>Bocinas y amplificadores</li><li>Fuentes y cargadores</li><li>Aparatos que no encienden</li><li>Pequeños electrodomésticos</li></ul></article>
+      <article class="panel"><h3>Electro auto</h3><ul><li>Luces y direccionales</li><li>Fallas del sistema eléctrico</li><li>Revisión de voltaje y cableado</li><li>Instalación de focos y accesorios</li></ul></article>
+    </div>
+  </div></section>
+
+  <section id="trabajos"><div class="wrap">
+    <div class="section-head"><h2>Trabajos</h2><p class="sub">Algunos proyectos y equipos revisados por Jr.G.</p></div>
+    <div class="work-grid">
+      <article class="work"><div class="placeholder">Agrega aquí tu foto</div><p>Luces LED y barra en combi</p></article>
+      <article class="work"><div class="placeholder">Agrega aquí tu foto</div><p>Amplificador con woofer</p></article>
+      <article class="work"><div class="placeholder">Agrega aquí tu foto</div><p>Amplificador 2.1 en revisión</p></article>
+      <article class="work"><div class="placeholder">Agrega aquí tu foto</div><p>Placa de audio Bluetooth</p></article>
+      <article class="work"><div class="placeholder">Agrega aquí tu foto</div><p>Aspiradora Koblenz</p></article>
+      <article class="work"><div class="placeholder">Agrega aquí tu foto</div><p>Mi mesa de trabajo</p></article>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="section-head"><h2>Cómo trabajo</h2><p class="sub">Sin sorpresas: primero hablamos, después revisamos.</p></div>
+    <div class="steps">
+      <div class="step"><b>01 · Me cuentas</b><p>Me mandas una foto o un video de la falla por WhatsApp.</p></div>
+      <div class="step"><b>02 · Te explico</b><p>Te digo qué puede ser y cuánto cuesta revisarlo, antes de empezar.</p></div>
+      <div class="step"><b>03 · Lo probamos</b><p>Lo reparo y te lo entrego probado.</p></div>
+    </div>
+  </div></section>
+
+  <section id="contacto"><div class="wrap"><div class="contact">
+    <div><div class="eyebrow">¿Algo no funciona?</div><h2>Cuéntame qué le pasa.</h2><p>Escríbeme y vemos cómo solucionarlo.</p></div>
+    <a class="btn primary wa-link" href="#">Escríbeme por WhatsApp</a>
+  </div></div></section>
+</main>
+<footer><div class="wrap">© Jr.G · Electrónica y Electro Auto</div></footer>
+<a class="float wa-link" href="#" aria-label="Contactar por WhatsApp">WhatsApp ↗</a>
+<script>
+  // CAMBIA este número por tu WhatsApp: código de país + número, solo dígitos.
+  // México: 52 + número de 10 dígitos. Ejemplo ficticio: 525512345678
+  const WHATSAPP_NUMBER = "52TUNUMERO";
+  const message = encodeURIComponent("Hola Jr.G, quiero consultar por una reparación.");
+  document.querySelectorAll(".wa-link").forEach(link => {
+    link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    link.target = "_blank";
+    link.rel = "noopener";
+  });
+</script>
+</body>
+</html>
